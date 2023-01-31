@@ -1,5 +1,5 @@
 {
-  "name": "wp-starter",
+  "name": "starter",
   "version": "1.0.0",
   "description": "production",
   "main": "index.js",
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@babel/register": "^7.18.9",
-    "gsap": "^3.11.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-fontmin": "^0.7.4",
