@@ -34,7 +34,7 @@ export default class App{
 	}
 
 	onAfterLeave(){
-		tthis.gscroll.paused(true);
+		this.gscroll.paused(true);
 		this.gscroll.scrollTop(0);
 		ScrollTrigger.refresh();
 		ScrollTrigger.getAll().forEach(t => t.kill());
