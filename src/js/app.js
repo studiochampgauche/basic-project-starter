@@ -7,10 +7,13 @@ import ScrollSmoother from './gsap/ScrollSmoother.js';
 
 export default class App{
 
+	onBeforeOnce(){
+		console.log('onBeforeOnce');
+		this.scroller();
+	}
+
 	onOnce(container, namespace){
 		console.log('onOnce');
-
-		this.scroller();
 	}
 
 
@@ -31,8 +34,9 @@ export default class App{
 	}
 
 	onAfterLeave(){
-		this.gscroll.paused(true);
+		tthis.gscroll.paused(true);
 		this.gscroll.scrollTop(0);
+		ScrollTrigger.refresh();
 		ScrollTrigger.getAll().forEach(t => t.kill());
 	}
 
@@ -54,7 +58,6 @@ export default class App{
 	}
 
 	onAfterEnter(){
-		this.gscroll.scrollTrigger.refresh();
 		this.gscroll.paused(false);
 	}
 

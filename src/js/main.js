@@ -17,6 +17,8 @@ class Main{
 
 		const app = new App();
 
+		window.onload = app.onBeforeOnce();
+
 		barba.init({
 			debug: false,
 			preventRunning: true,
